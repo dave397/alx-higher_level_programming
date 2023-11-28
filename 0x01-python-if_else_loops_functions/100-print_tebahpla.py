@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 capitalize = False
 for i in range(122, 96, -1):
     if not capitalize:
