@@ -17,13 +17,13 @@ def init(args):
     elif args[2] == "/":
         print("{} / {} = {}".format(a, b, div(a, b)))  
     else:
-        sys.stderr.write("Unknown operator. Available operators: +, -, * and /\n")
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
 
 if __name__ == "__main__":
     if len(sys.argv) - 1 != 3:
-        sys.stderr.write("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     init(sys.argv)
