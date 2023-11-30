@@ -7,15 +7,15 @@ from calculator_1 import add, sub, mul, div
 def init(args):
     a = int(args[1])
     b = int(args[3])
-    
+
     if args[2] == "+":
-        print("{} + {} = {}".format(a, b, add(a, b)))  
+        print("{} + {} = {}".format(a, b, add(a, b)))
     elif args[2] == "-":
-        print("{} - {} = {}".format(a, b, sub(a, b)))  
+        print("{} - {} = {}".format(a, b, sub(a, b)))
     elif args[2] == "*":
-        print("{} * {} = {}".format(a, b, mul(a, b)))  
+        print("{} * {} = {}".format(a, b, mul(a, b)))
     elif args[2] == "/":
-        print("{} / {} = {}".format(a, b, div(a, b)))  
+        print("{} / {} = {}".format(a, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
@@ -27,4 +27,3 @@ if __name__ == "__main__":
         sys.exit(1)
 
     init(sys.argv)
-
