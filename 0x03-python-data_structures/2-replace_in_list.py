@@ -9,7 +9,7 @@ def num_len(my_list=[]):
 def replace_in_list(my_list, idx, element):
     count = num_len(my_list)
 
-    if idx < 0 | idx > count - 1:
+    if idx < 0 or idx > count - 1:
         return my_list
     else:
         my_list[idx] = element
