@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * reverse_list - reverse list
+ * reverse - reverse list
  * @head: Pointer to the head  list
  * Return: Pointer to the new head  list
  */
@@ -19,7 +19,7 @@ listint_t *reverse(listint_t *head)
 		current = next;
 	}
 
-	return prev;
+	return (prev);
 }
 
 /**
@@ -30,7 +30,7 @@ listint_t *reverse(listint_t *head)
 int is_palindrome(listint_t **head)
 {
 	if (*head == NULL || (*head)->next == NULL)
-		return 1;
+		return (1);
 
 	listint_t *slow = *head;
 	listint_t *fast = *head;
@@ -49,11 +49,11 @@ int is_palindrome(listint_t **head)
 	while (second_half != NULL)
 	{
 		if ((*head)->n != second_half->n)
-			return 0;
+			return (0);
 
 		*head = (*head)->next;
 		second_half = second_half->next;
 	}
 
-	return 1;
+	return (1);
 }
