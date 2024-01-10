@@ -2,6 +2,7 @@
 """Function Adds integer
 """
 
+
 def add_integer(a, b=98):
     """Adds two intrgers and returns value
 
@@ -21,5 +22,3 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
-       
-    
