@@ -26,10 +26,10 @@ class Student:
         Args:
             attrs (list): (Optional) The attributes to represent.
         """
-        def get_attributes(self, attrs):
-            if isinstance(attrs, list) and all(isinstance(ele, str) for ele in attrs):
-                return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-            return self.__dict__
+        
+        if isinstance(attrs, list) and all(isinstance(ele, str) for ele in attrs):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
 
     def reload_from_json(self, json):
         """Change all attributes of the Student.
